@@ -2,18 +2,16 @@ package cn.distributedcache;
 
 
 	
-	import java.io.BufferedReader;
-
-	import java.io.FileReader;
-	import java.io.IOException;
-    import java.net.URI;
-    import java.util.ArrayList;
-	import java.util.StringTokenizer;
-
-    import org.apache.hadoop.fs.Path;
-	import org.apache.hadoop.io.LongWritable;
-	import org.apache.hadoop.io.Text;
-	import org.apache.hadoop.mapreduce.Mapper;
+import java.io.BufferedReader;
+import java.io.FileReader;
+import java.io.IOException;
+import java.net.URI;
+import java.util.ArrayList;
+import java.util.StringTokenizer;
+import org.apache.hadoop.fs.Path;
+import org.apache.hadoop.io.LongWritable;
+import org.apache.hadoop.io.Text;
+import org.apache.hadoop.mapreduce.Mapper;
 
 
 	public class DcMapper extends Mapper<Object, Text, Text, LongWritable> {
